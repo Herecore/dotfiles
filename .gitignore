@@ -1,8 +1,6 @@
-### Script from https://pgaskin.net/posts/git-dotfiles/
-#
-# After editing the file run "dtf add -A" to add them, and "dtf commit" to commit
-#
-### Dotfiles
+##### REMINDER: 
+##### After editing the file run "dtf add -A" to add them, and "dtf commit" to commit
+# Dotfiles
 /**
 !/.gitignore
 !/.config/
