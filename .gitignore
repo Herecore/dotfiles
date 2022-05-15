@@ -6,5 +6,16 @@
 /**
 !/.gitignore
 !/.config/
+!/.config/aliasrc
 !/.config/sway/
 !/.config/sway/**
+!/.config/X11/
+!/.config/X11/xresources
+!/.config/zsh/
+!/.config/zsh/.zprofile
+!/.config/zsh/.zshrc
+!/.config/kitty/
+!/.config/kitty/*
+!/.config/waybar/
+!/.config/waybar/*
+

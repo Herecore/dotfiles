@@ -1,0 +1,75 @@
+{
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+	"cpu",
+        "memory",
+        "pulseaudio",
+        "clock"
+    ],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "FIRST",
+            "2": "SECOND",
+            "3": "THIRD",
+            "4": "FOURTH",
+            "5": "FIFTH",
+            "6": "SIXTH",
+            "7": "SEVENTH",
+            "8": "EIGHTH",
+        },
+    },
+    "tray": {
+        "icon-size": 15,
+       	"spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%d/%m/%Y %H:%M}",
+        "on-click": "gsimplecal"
+    },
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false,
+        "min-length": 7,
+        "interval": 1
+    },
+    "memory": {
+        "format": "RAM {}%",
+        "min-length": 7,
+        "tooltip": false,
+        "interval": 1
+    },
+    "pulseaudio": {
+        "scroll-step": "5%", // %, can be a float
+        "format": "VOL {volume}% ",
+        "format-muted": "VOL 0%",
+        },
+        "on-click-right": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "tooltip": false,
+        "min-length": 7
+    },
+    "sway/window": {
+        "max-length": 30,
+        "tooltip": false,
+        "format": " {}"
+    },
+    "custom/sep": {
+        "format": "  ",
+        "tooltip": false,
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 14,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "tooltip": false,
+    }
+}

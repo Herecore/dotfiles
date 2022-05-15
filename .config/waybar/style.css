@@ -1,0 +1,99 @@
+/*defining colors*/
+/*base colors:*/
+@define-color nord0  #2e3440;
+@define-color nord1  #3b4252;
+@define-color nord2  #434c5e;
+@define-color nord3  #4c566a;
+
+/*Snow storm*/
+@define-color nord4  #d8dee9;
+@define-color nord5  #e5e9f0;
+@define-color nord6  #eceff4;
+
+/*Frost*/
+@define-color nord7  #8fbcbb;
+@define-color nord8  #88c0d0;
+@define-color nord9  #81a1c1;
+@define-color nord10 #5e81ac;
+
+/*Aurora*/
+@define-color red    #bf616a;
+@define-color orange #d08770;
+@define-color yellow #ebcb8b;
+@define-color green  #a3be8c;
+@define-color purple #b48ead;
+
+
+* {
+    border: none;
+    font-family: "Hack";
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+window {
+    font-weight: bold;
+}
+
+window#waybar {
+    background:         @nord1;
+}
+
+/*-----module groups----*/
+.modules-right {
+    margin:             0px 10px 0 0;
+}
+.modules-center {
+    margin:             0px 0 0 0;
+}
+.modules-left {
+    margin:             0px 0 0 10px;
+}
+
+/*-----modules indv----*/
+#workspaces button {
+    padding:            0px 10px;
+    color:              @nord6;
+}
+#workspaces button:hover {
+    color:              @nord1;
+    background-color:   @nord6;
+}
+#workspaces button.focused {
+    background-color:   @nord6;
+    color:              @nord1;
+}
+
+#tray,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+
+#tray {
+
+}
+
+#cpu {
+    color: @nord4;
+    padding: 0 5px;
+}
+
+#memory{
+    color: @nord4;
+    padding: 0 5px;
+}
+
+/*-----Indicators----*/
+#pulseaudio {
+    color: @nord4;
+    padding: 0 5px;
+}
+#pulseaudio.muted {
+    color: @nord3;
+    padding: 0 12px;
+}
+#clock {
+    color: @nord6;
+}
