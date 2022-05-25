@@ -50,8 +50,9 @@
     gaps inner 10px
 
     ### Wallpaper
-    output "*" bg ~/.config/sway/wallpaper/come_and_take_it.png fill
-    
+    # Random wallpaper on boot
+    exec swaybg -i $(find .config/sway/wallpaper/. -type f | shuf -n1) -m fill
+
     ### Cursor 
     # Apply cursor theme for sway
     seat seat0 xcursor_theme 'volantes_cursors' 32
@@ -205,5 +206,6 @@
 
 ### Window rules
     for_window [title="Friends List"] floating enable
+    for_window [title="Origin"] floating enable
 
 include /etc/sway/config.d/*
