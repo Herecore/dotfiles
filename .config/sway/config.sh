@@ -36,7 +36,8 @@
     output "*" adaptive_sync on
 
 ### Enable notifications
-    exec mako
+    # Disabled, because mako has insane memory leaks. Until those fixed, I won't use any notifications
+    # exec mako
 
 ### Enable auth agent
     exec "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
