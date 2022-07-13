@@ -3,7 +3,7 @@
     set $mod Mod4
 
     ### Terminal
-    set $term kitty
+    set $term alacritty
 
     ### Launcher
     for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
