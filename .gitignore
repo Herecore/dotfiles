@@ -8,6 +8,7 @@
 !/.config/sway/
 !/.config/sway/*
 !/.config/sway/wallpaper/
+!/.config/sway/wallpaper/*
 !/.config/X11/
 !/.config/X11/xresources
 !/.config/zsh/
