@@ -44,6 +44,19 @@ colors:
     magenta: '#b48ead'
     cyan:    '#88c0d0'
     white:   '#e5e9f0'
+  
+
+  # Bright colors
+  bright:
+    black:   '#4c566a'
+    red:     '#bf616a'
+    green:   '#a3be8c'
+    yellow:  '#ebcb8b'
+    blue:    '#5e81ac'
+    magenta: '#b48ead'
+    cyan:    '#88c0d0'
+    white:   '#eceff4'
+
 
 cursor:
   style:
