@@ -100,7 +100,7 @@
     ### Mouse sensitivity
     input 1133:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse pointer_accel -0.75
 
-### Key bindings
+### Keybinds
     ### Start a terminal
     $mybind $mod+Return exec $term
 
@@ -112,6 +112,9 @@
 
     ### Start a password manager
     $mybind $mod+k exec $passmgr
+
+    ### Open a notification center
+    $mybind $mod+h exec swaync-client -t
 
     ### Take a screenshot and copy to clipboard
     $mybind Print exec $screenshot
