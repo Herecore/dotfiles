@@ -36,7 +36,7 @@
     output "*" adaptive_sync on
 
 ### Enable notifications
-    exec mako
+    exec swaync
 
 ### Enable auth agent
     exec "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
